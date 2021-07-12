@@ -64,8 +64,7 @@ Gamut-mapping 有时候会被列入 learning-besed 类算法，有事可以单�
 Gamut mapping 的标准流程如下，但是这个算法有几类缺陷：
 （1）learning 到的 gamut 不一样的标准的
 （2）Gamut 是三维的话，计算量还是很大的
-（3）不能求出一个准确解，只是一个最优解，这在学术上会导致其指标略差，不过对于业界
-来说足够了。
+（3）不能求出一个准确解，只是一个最优解，这在学术上会导致其指标略差，不过对于业界来说足够了。
 
 
 
@@ -85,7 +84,7 @@ Gamut mapping 的标准流程如下，但是这个算法有几类缺陷：
 
 [FFCC - Fast Fourier Color Constancy, (2017 CVPR)](https://arxiv.org/pdf/1611.07596v3.pdf)
 
-[FC4 - FC4: Fully convolutional color constancy with confidence-weighted pooling, (2017 CVPR)]()
+[FC4 - FC4: Fully convolutional color constancy with confidence-weighted pooling, (2017 CVPR)](https://openaccess.thecvf.com/content_cvpr_2017/papers/Hu_FC4_Fully_Convolutional_CVPR_2017_paper.pdf)
 
 ### Based on the detailed knowledge of the camera module properties
 
@@ -97,6 +96,9 @@ Gamut mapping 的标准流程如下，但是这个算法有几类缺陷：
 
 ## Performance Evaluation Index - How to measure?
 
-
+1. `E00` from CIE
+2. Angular Error (common used before)
+3. RAE (Reproduiction Angular Error) Paper: [The Reproduction Angular Error for Evaluating the Performance of Illuminant Estimation Algorithms](https://ieeexplore.ieee.org/abstract/document/7494650)
+4. Relative Error
 
 
